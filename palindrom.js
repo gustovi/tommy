@@ -38,8 +38,8 @@
 let palindromNumbers = [];
 function isPalindrom(num){
    let initialNumber = num;
-   let finalNum = 1;
-   while (num != 0) {
+   let finalNum = 0;
+   while (num != 0) { 
       finalNum = num % 10 + finalNum * 10;
       num = Math.floor(num / 10);
    }
